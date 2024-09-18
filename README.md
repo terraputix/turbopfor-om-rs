@@ -1,4 +1,4 @@
-# TurboPFor Rust Bindings for Open-Meteo TurboPFor-Version
+# Rust Bindings for Open-Meteo TurboPFor-Version
 
 This project provides bindings to the [TurboPFor](https://github.com/powturbo/TurboPFor-Integer-Compression) compression library.
 
@@ -7,3 +7,12 @@ project due to breaking changes in the original codec, which rendered the compre
 incompatible. As a result, the [turbo-pfor-sys](https://github.com/mwlon/turbo-pfor-sys) crate
 cannot be used. This repository adapts the code from [turbo-pfor-sys](https://github.com/mwlon/turbo-pfor-sys)
 to support the open-meteo versions of TurboPFor.
+
+## Development
+
+Build and Test:
+
+```bash
+cargo build
+cargo test
+```

@@ -1,0 +1,24 @@
+[package]
+name = "turbo_pfor_om"
+version = "0.0.1"
+edition = "2021"
+
+build = "build.rs"
+
+categories = ["compression", "encoding"]
+description = "TurboPFor codec bindings"
+include = [
+    "TurboPFor/include/**/*.h",
+    "TurboPFor/makefile",
+    "src/**/*",
+    "Cargo.toml",
+    "build.rs",
+    "README.md",
+]
+license = "GPL-2.0-or-later"
+
+[dependencies]
+libc = "0.2"
+
+[build-dependencies]
+bindgen = "0.69.4"

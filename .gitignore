@@ -1,0 +1,4 @@
+*.o
+target/
+TurboPForOM/libic.a
+TurboPForOM/test_libic

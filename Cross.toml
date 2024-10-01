@@ -1,0 +1,15 @@
+
+[target.aarch64-unknown-linux-gnu]
+image = "messense/manylinux_2_28-cross:aarch64"
+pre-build = ["apt install libclang-dev -y"]
+
+[target.arm-unknown-linux-gnueabi]
+image = "messense/manylinux_2_28-cross:armv7"
+pre-build = ["apt install libclang-dev -y"]
+
+
+[target.x86_64-unknown-linux-gnu]
+image = "messense/manylinux_2_28-cross:x86_64"
+pre-build = [
+    "cat /etc/os-release && apt install clang libclang-dev -y && apt list --installed | grep clang && echo 'Clang installed'",
+]
